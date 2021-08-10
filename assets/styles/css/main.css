@@ -735,12 +735,17 @@
   margin-bottom: 10px;
 }
 
-.home_page .blog .blog_list p {
+.home_page .blog .blog_list a {
   font-size: 16px;
   font-family: "Madeevolvesans";
   color: #A0A0A0;
   margin: 0;
   padding: 0;
+  text-decoration: none;
+}
+
+.home_page .blog .blog_list a:hover {
+  text-decoration: underline;
 }
 
 .home_page .blog .owl-carousel {
