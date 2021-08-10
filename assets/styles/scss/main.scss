@@ -354,9 +354,10 @@
             @include display(center, center);
             flex-direction: column;
             h5 {
-                @include text(18px, 'Madeevolvesans-medium', $color-text-light);
+                @include text(18px, 'Madeevolvesans-medium', $color-grey);
                 letter-spacing: 0.4em;
                 text-transform: uppercase;
+                line-height: 18px;
             }
             h2 {
                 text-align: center;
@@ -367,7 +368,7 @@
                 margin-top: 24px;
             }
             p {
-                @include text(16px, 'Madeevolvesans-light', $color-text-light-grey);
+                @include text(16px, 'Madeevolvesans-light', #666666);
                 width: 794px;
                 margin-top: 32px;
             }
@@ -394,16 +395,17 @@
     // End decison
 
     .blog {
-        @include bg-color($bg-color, 768px);
+        @include bg-color($backgound, 768px);
         padding: 103px 0;
 
         .blog__text {
             margin-bottom: 60px;
             h5 {
-                @include text(18px, 'Madeevolvesans-medium', $color-text-light);
+                @include text(18px, 'Madeevolvesans-medium', $color-grey);
                 letter-spacing: 0.4em;
                 text-transform: uppercase;
                 text-align: center;
+                line-height: 18px;
             }
         }
 
@@ -426,9 +428,11 @@
             }
 
             a {
-                @include text(16px, 'Madeevolvesans', $color-text-light);
+                @include text(16px, 'Madeevolvesans', #666666);
                 text-decoration: none;
+                transition: .5s;
                 &:hover {
+                    color: $color-white;
                     text-decoration: underline;
                 }
             }
@@ -477,7 +481,7 @@
     // End blog
 
     footer {
-        @include bg-color($color-text-dark, 768px);
+        @include bg-color($bgc-footer, 768px);
         position: relative;
         margin-top: 0;
         z-index: 9999;
@@ -486,10 +490,11 @@
 
         .footer_hat_text {
             h5 {
-                @include text(18px, 'Madeevolvesans-medium', $color-text-light);
+                @include text(18px, 'Madeevolvesans-medium', $color-grey);
                 letter-spacing: 0.4em;
                 text-transform: uppercase;
                 text-align: center;
+                line-height: 18px;
             }
         }
         .footer_title_text {
@@ -534,9 +539,9 @@
                 width: 60px;
                 height: 60px;
                 border-radius: 50%;
-                background-color: $color-text-light-grey;
+                background-color: $bgc-icon;
                 @include display(center, center);
-                color: $color-text;
+                color: $color-icon;
                 font-size: 25px;
                 transition: .5s;
                 &:hover {
